@@ -9,7 +9,7 @@ event.preventDefault();
   let entereddata=eninput.value;
   console.log(entereddata);
   //let api=`http://api.tvmaze.com/search/shows?q=${entereddata}`;
-  let xx="http://api.tvmaze.com/search/shows?q=" + entereddata;
+  let xx="https://api.tvmaze.com/search/shows?q=" + entereddata;
 fetch(xx)
 .then((resp) => resp.json())//data wil be fetched in unparsed format
 .then((data)=>{
